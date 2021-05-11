@@ -39,7 +39,10 @@ button:hover {
     max-width: 1450px;
     width: 80%;
     margin: auto;
-    border: 1px solid black;
+}
+h3 {
+    font-size: 3rem;
+    color: var(--tamnoPlava);
 }
 /****************************
 header
@@ -90,4 +93,58 @@ about
 }
 .about h4 {
     font-size: 2rem;
+}
+/****************************
+services
+****************************/
+.services {
+    padding: var(--padding);
+    background-color: var(--svetloSiva);
+}
+.services article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.services article div {
+    flex: 0 0 31.4%;
+}
+.services img {
+    width: 100%;
+    display: block; 
+}
+.services p {
+    padding: 10px 0 30px;
+}
+/****************************
+projects
+****************************/
+.projects {
+    padding: var(--padding);
+}
+.projects article:first-child {
+    text-align: center;
+}
+.projects h3 + p {
+    padding: 10px 0 50px;
+}
+.projects article:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.projects article:last-child div {
+    flex: 0 0 31.4%;
+}
+.projects img {
+    width: 100%;
+}
+.projects h5 {
+    font-size: 1.6rem;
+    color: var(--tamnoPlava);
+}
+.projects h5 + p {
+    padding: 5px 0 20px;
 }
